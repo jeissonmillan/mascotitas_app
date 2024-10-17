@@ -1,0 +1,7 @@
+# Forzar LF en todos los archivos de texto
+* text=auto
+
+# Forzar LF en archivos específicos
+*.js text eol=lf
+*.html text eol=lf
+*.scss text eol=lf
