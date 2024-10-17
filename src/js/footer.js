@@ -1,14 +1,13 @@
-// src/js/my-component.js
-class MyComponent extends HTMLElement {
-    constructor() {
-      super();
-      // Creamos un shadow DOM para encapsular el componente
-      this.attachShadow({ mode: 'open' });
-    }
-  
-    connectedCallback() {
-      const template = document.createElement('template');
-      template.innerHTML = `
+class Footer extends HTMLElement {
+  constructor() {
+    super();
+    // Creamos un shadow DOM para encapsular el componente
+    this.attachShadow({ mode: 'open' });
+  }
+
+  connectedCallback() {
+    const template = document.createElement('template');
+    template.innerHTML = `
         <style>
           * {
     box-sizing: border-box;
@@ -172,11 +171,11 @@ class MyComponent extends HTMLElement {
         <img src="/public/images/nequi_footer.png" alt="nequi logo">
       </section>
       `;
-  
-      // Clonamos el template y lo añadimos al shadow DOM
-      this.shadowRoot.appendChild(template.content.cloneNode(true));
-    }
+
+    // Clonamos el template y lo añadimos al shadow DOM
+    this.shadowRoot.appendChild(template.content.cloneNode(true));
   }
-  
-  // Definir el nuevo componente con un nombre personalizado
-  customElements.define('my-component', MyComponent);
+}
+
+// Definir el nuevo componente con un nombre personalizado
+customElements.define('footer-mascotitas', Footer);
