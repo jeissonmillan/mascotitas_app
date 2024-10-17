@@ -1,5 +1,4 @@
-// src/js/my-component.js
-class MyComponent extends HTMLElement {
+class Footer extends HTMLElement {
   constructor() {
     super();
     // Creamos un shadow DOM para encapsular el componente
@@ -179,4 +178,4 @@ class MyComponent extends HTMLElement {
 }
 
 // Definir el nuevo componente con un nombre personalizado
-customElements.define('my-component', MyComponent);
+customElements.define('footer-mascotitas', Footer);
