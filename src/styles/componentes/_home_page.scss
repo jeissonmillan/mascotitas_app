@@ -1,0 +1,23 @@
+.home-page {
+  &__carrusel {
+  }
+
+  &__titulo {
+    color: #f05a25;
+    text-align: center;
+  }
+
+  &__contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    padding: 10px;
+
+    &--caja {
+      border: 1px solid #ffe7da;
+      padding: 20px;
+    }
+  }
+}
